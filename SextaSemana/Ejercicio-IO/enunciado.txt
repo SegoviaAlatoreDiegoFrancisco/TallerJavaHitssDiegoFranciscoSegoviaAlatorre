@@ -1,0 +1,5 @@
+Gestión de archivo + Validación de usuario
+Problema: Haz un programa que lea un archivo de texto con nombres de usuarios. 
+Si el archivo no existe, captura la excepción. 
+Además, valida que cada nombre tenga al menos 3 caracteres;
+ si no, lanza una excepción personalizada NombreInvalidoException.
