@@ -1,4 +1,3 @@
-package entidades;
 import genericos.Identificable;
 import java.util.List;
 

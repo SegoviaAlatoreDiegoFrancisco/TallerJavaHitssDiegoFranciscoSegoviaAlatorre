@@ -1,4 +1,3 @@
-import entidades.*;
 import genericos.*;
 import java.util.Arrays;
 import java.util.List;

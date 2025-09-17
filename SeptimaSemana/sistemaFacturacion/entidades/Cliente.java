@@ -1,4 +1,3 @@
-package entidades;
 import genericos.Identificable;
 
 public class Cliente implements Identificable<String>{

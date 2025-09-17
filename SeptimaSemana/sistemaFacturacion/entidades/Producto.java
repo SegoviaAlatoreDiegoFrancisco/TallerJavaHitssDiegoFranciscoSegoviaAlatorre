@@ -1,5 +1,3 @@
-package entidades;
-
 import genericos.Identificable;
 
 public class Producto implements Identificable<Integer>{
