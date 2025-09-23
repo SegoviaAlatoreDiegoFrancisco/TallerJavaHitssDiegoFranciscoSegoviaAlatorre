@@ -13,7 +13,7 @@ public class ProyectoVuelo {
 
         try (BufferedReader br = new BufferedReader(new FileReader("docs\\vuelos.csv"))) {
             String linea;
-            br.readLine(); // Saltar encabezado
+            br.readLine(); 
 
             while ((linea = br.readLine()) != null) {
                 String[] datos = linea.split(",");
@@ -37,7 +37,7 @@ public class ProyectoVuelo {
             System.out.println("Error: " + e.getMessage());
         }
 
-        // Ordenar por llegada
+      
         vuelos.sort(Comparator.comparing(Vuelo::getFecha).thenComparing(Vuelo::getHora));
 
         System.out.println("Vuelos ordenados por llegada:");

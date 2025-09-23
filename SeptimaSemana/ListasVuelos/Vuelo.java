@@ -18,9 +18,15 @@ public class Vuelo {
         this.pasajeros = pasajeros;
     }
 
-    public LocalDate getFecha() { return fecha; }
-    public LocalTime getHora() { return hora; }
-    public int getPasajeros() { return pasajeros; }
+    public LocalDate getFecha() { 
+        return fecha; 
+    }
+    public LocalTime getHora() { 
+        return hora; 
+    }
+    public int getPasajeros() { 
+        return pasajeros; 
+    }
 
     @Override
     public String toString() {
