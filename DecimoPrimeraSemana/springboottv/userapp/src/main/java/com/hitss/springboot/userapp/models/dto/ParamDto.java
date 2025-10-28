@@ -1,4 +1,4 @@
-package com.hitss.springboot.userapp.models;
+package com.hitss.springboot.userapp.models.dto;
 
 public class ParamDto {
     private String message;

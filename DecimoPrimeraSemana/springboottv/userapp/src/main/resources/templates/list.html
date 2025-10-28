@@ -3,29 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title th:text="${title}">Document</title>
+    <title th:text="${title}"></title>
 </head>
 <body>
     <h1 th:text="${title}"></h1>
-    <h1 th:if="$(users.isEmpty())" th:text="${'No Hay usuarios'}"></h1>
-
+    <h2 th:if="${users.isEmpty()}" th:text="${'No hay usuarios'}"></h2>
     <table border="1" th:if="${not users.isEmpty()}">
         <thead>
             <tr>
                 <th>Name</th>
                 <th>LastName</th>
-                <th>birthDate</th>
+                <th>Birthday</th>
                 <th>Email</th>
-            </tr>
+            </tr>            
         </thead>
         <tbody>
-            <tr th:each="user: ${users}">
+            <tr th:each="user: ${users}" >
                 <td th:text="${user.name}"></td>
                 <td th:text="${user.lastname}"></td>
-                <td th:if="${user.birthDate}" th:text="${user.birthDate}"></td>
-                <td th:if="${not (user.birthDay != null )}" th:text="${' - '}"></td>
-                <td th:if="${not(user.email)}" th:text="${user.email}"></td>
-                <td th:if="${not (user.email != null )}" th:text="${' - '}"></td>
+                <td th:text="${user.birthday}"></td>
+                <td th:if="${user.email}" th:text ="${user.email}"></td>
+                <td th:if="${not(user.email != null)}" th:text="${'  -  '}"></td>    
             </tr>
         </tbody>
     </table>

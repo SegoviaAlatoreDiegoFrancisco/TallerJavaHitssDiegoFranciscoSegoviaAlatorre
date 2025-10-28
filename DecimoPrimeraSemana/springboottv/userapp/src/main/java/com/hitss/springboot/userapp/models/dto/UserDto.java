@@ -1,14 +1,10 @@
-package com.hitss.springboot.userapp.models;
+package com.hitss.springboot.userapp.models.dto;
 
-public class UserDTO {
+import com.hitss.springboot.userapp.models.User;
+
+public class UserDto {
     private String title;
     private User user;
-    public UserDTO() {
-    }
-    public UserDTO(String title, User user) {
-        this.title = title;
-        this.user = user;
-    }
     public String getTitle() {
         return title;
     }
@@ -21,6 +17,8 @@ public class UserDTO {
     public void setUser(User user) {
         this.user = user;
     }
-
     
+    
+    
+
 }

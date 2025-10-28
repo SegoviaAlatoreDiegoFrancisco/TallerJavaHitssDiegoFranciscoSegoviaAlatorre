@@ -5,13 +5,21 @@ import java.time.LocalDate;
 public class User {
     private String name;
     private String lastname;
-    private LocalDate birthDate;
+    private LocalDate birthday;
     private String email;
     
-    public User(String name, String lastname, LocalDate birthDate) {
+    public User() {
+    }
+    public User(String name, String lastname, LocalDate birthday, String email) {
         this.name = name;
         this.lastname = lastname;
-        this.birthDate = birthDate;
+        this.birthday = birthday;
+        this.email = email;
+    }
+    public User(String name, String lastname, LocalDate birthday) {
+        this.name = name;
+        this.lastname = lastname;
+        this.birthday = birthday;
     }
     public String getName() {
         return name;
@@ -25,11 +33,15 @@ public class User {
     public void setLastname(String lastname) {
         this.lastname = lastname;
     }
-    public LocalDate getBirthDate() {
-        return birthDate;
+    public LocalDate getBirthday() {
+        return birthday;
     }
-    public void setBirthDate(LocalDate birthDate) {
-        this.birthDate = birthDate;
+    public void setBirthday(LocalDate birthday) {
+        this.birthday = birthday;
+    }
+    public User(String name, String lastname) {
+        this.name = name;
+        this.lastname = lastname;
     }
     public String getEmail() {
         return email;
@@ -38,5 +50,5 @@ public class User {
         this.email = email;
     }
     
-    
+
 }
