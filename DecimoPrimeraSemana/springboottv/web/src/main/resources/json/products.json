@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Memoria RamKingston Fury 32GB)",
+        "price": 652.5
+    },
+    {
+        "id": 2,
+        "name": "Memoria Kingston 420 GB ",
+        "price": 1160.0
+    },
+    {
+        "id": 3,
+        "name": "Fuente de podel Stylos 600W",
+        "price": 754.725
+    },
+    {
+        "id": 4,
+        "name": "Procesador Intel Core I5 3200",
+        "price": 1232.5
+    },
+    {
+        "id": 5,
+        "name": "Monitor 19 pulgadas Stylos",
+        "price": 2247.5
+    }
+]
